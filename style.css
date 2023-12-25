@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+.day{
+    margin: 0 5px 28px 0;
+}
+.center{
+    padding: 18px 0;
+}
+.day li{
+    color: #959494;
+    list-style: none;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+  .contribution-grid {
+    display: grid;
+    grid-template-rows: repeat(7, 15px);
+    grid-template-columns: repeat(51,15px); 
+    gap: 1px;
+  }
+
+.contribution-cell {
+  width: 15px;
+  height: 15px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.level-0 {
+  background-color: #EDEDED; 
+}
+
+.level-1-9 {
+  background-color: #ACD5F2; 
+}
+
+.level-10-19 {
+  background-color: #7FA8C9; 
+}
+
+.level-20-29 {
+  background-color: #527BA0; 
+}
+
+.level-30 {
+  background-color: #254E77; 
+}
+.tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    z-index: 1;
+    display: none;
+    text-align: center;
+  }
+  .contribution-cell:hover .tooltip{
+    display: block;
+  }
+  .date-info {
+    margin-top: 10px;
+    font-size: 14px;
+    display: inline-block;
+  }
+ 
